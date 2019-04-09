@@ -104,7 +104,7 @@ ylabel('Exam 2 score')
 legend('Admitted', 'Not admitted')
 hold off;
 
-fprintf('\nProgram paused. Press enter to continue.\n');
+fprinmeanmytf('\nProgram paused. Press enter to continue.\n');
 pause;
 
 %% ============== Part 4: Predict and Accuracies ==============
