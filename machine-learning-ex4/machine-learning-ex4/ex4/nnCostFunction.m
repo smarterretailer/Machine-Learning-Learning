@@ -14,14 +14,22 @@ function [J grad] = nnCostFunction(nn_params, ...
 %   partial derivatives of the neural network.
 %
 
-% Reshape nn_params back into the parameters Theta1 and Theta2, the weight matrices
+% Original: Reshape nn_params back into the parameters Theta1 and Theta2, the weight matrices
 % for our 2 layer neural network
-Theta1 = reshape(nn_params(1:hidden_layer_size * (input_layer_size + 1)), ...
-                 hidden_layer_size, (input_layer_size + 1));
+##Theta1 = reshape(nn_params(1:hidden_layer_size * (input_layer_size + 1)), ...
+##                 hidden_layer_size, (input_layer_size + 1));
+##
+##Theta2 = reshape(nn_params((1 + (hidden_layer_size * (input_layer_size + 1))):end), ...
+##                 num_labels, (hidden_layer_size + 1));
 
-Theta2 = reshape(nn_params((1 + (hidden_layer_size * (input_layer_size + 1))):end), ...
-                 num_labels, (hidden_layer_size + 1));
-
+% Adding additonal layer: Reshape nn_params back into the parameters Theta1 and Theta2, the weight matrices
+% for our 2 layer neural network
+                
+Theta1 = reshape(nn_params(1:20050),50,401);
+Theta2 = reshape(nn_params(20051:21325),25,51);
+Theta3 = reshape(nn_params(21326:end),10,26);                 
+                
+                
 % Setup some useful variables
 m = size(X, 1);
          
@@ -29,6 +37,8 @@ m = size(X, 1);
 J = 0;
 Theta1_grad = zeros(size(Theta1));
 Theta2_grad = zeros(size(Theta2));
+% added for additional Layer
+Theta3_grad = zeros(size(Theta3));
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: You should complete the code by working through the
@@ -63,21 +73,53 @@ Theta2_grad = zeros(size(Theta2));
 %
 
 
+X = [ones(m, 1) X];
+
+for i=1:m
+    % activations for each layer
+    a1 = X(i,:)';
+    
+    z2 = Theta1 * a1;
+    a2 = [1; sigmoid(z2)];
+    
+    z3 = Theta2 * a2;
+    a3 = [1; sigmoid(z3)];
+    
+    z4 = Theta3 * a3;
+    a4 = sigmoid(z4);
+    
+    % final layer activation is output vector
+    %h = a3;
+    h = a4;
+    
+    % create a boolean vector from a numeric label
+    yVec = (1:num_labels)' == y(i);
+    J = J + sum(-yVec .* log(h) - (1 - yVec) .* log(1 - h));
+
+    % backpropagation
+    delta4 = a4 - yVec;
+    delta3 = ((Theta3)' * delta4) .* a3 .* (1 - a3);
+    delta2 = ((Theta2)' * delta3(2:end)) .* a2 .* (1 - a2);
 
 
+    Theta3_grad = Theta3_grad + delta4 * a3';
+    Theta2_grad = Theta2_grad + delta3(2:end) * a2';
+    Theta1_grad = Theta1_grad + delta2(2:end) * a1';
+end;
 
 
+% scaling cost function and gradients
+J = J / m;
+Theta1_grad = Theta1_grad / m;
+Theta2_grad = Theta2_grad / m;
+Theta3_grad = Theta3_grad / m;
 
 
-
-
-
-
-
-
-
-
-
+% regularization
+J = J + (lambda / (2 * m)) * (sumsq(Theta1(:, 2:end)(:)) + sumsq(Theta2(:, 2:end)(:)) + sumsq(Theta3(:, 2:end)(:)));
+Theta1_grad = Theta1_grad + (lambda / m) * [zeros(size(Theta1, 1), 1) Theta1(:,2:end)];
+Theta2_grad = Theta2_grad + (lambda / m) * [zeros(size(Theta2, 1), 1) Theta2(:,2:end)];
+Theta3_grad = Theta3_grad + (lambda / m) * [zeros(size(Theta3, 1), 1) Theta3(:,2:end)];
 
 
 % -------------------------------------------------------------
@@ -85,7 +127,7 @@ Theta2_grad = zeros(size(Theta2));
 % =========================================================================
 
 % Unroll gradients
-grad = [Theta1_grad(:) ; Theta2_grad(:)];
+grad = [Theta1_grad(:) ; Theta2_grad(:); Theta3_grad(:)];
 
 
 end
