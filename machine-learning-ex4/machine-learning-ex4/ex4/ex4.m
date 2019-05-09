@@ -59,7 +59,7 @@ Theta2 = rand(25,51);
 Theta3 = rand(10,26);
 
 % Unroll parameters 
-nn_params = [Theta1(:) ; Theta2(:) ;Theta3(:)];
+nn_params = [Theta1(:) ; Theta2(:) ; Theta3(:)];
 
 %% ================ Part 3: Compute Cost (Feedforward) ================
 %  To the neural network, you should first start by implementing the
@@ -132,9 +132,13 @@ pause;
 
 fprintf('\nInitializing Neural Network Parameters ...\n')
 
-initial_Theta1 = randInitializeWeights(input_layer_size, hidden_layer_size);
-initial_Theta2 = randInitializeWeights(hidden_layer_size, hidden_layer_size);
-initial_Theta3 = randInitializeWeights(hidden_layer_size, num_labels);
+##initial_Theta1 = randInitializeWeights(input_layer_size, hidden_layer_size);
+##initial_Theta2 = randInitializeWeights(hidden_layer_size, hidden_layer_size);
+##initial_Theta3 = randInitializeWeights(hidden_layer_size, num_labels);
+
+initial_Theta1 = reshape(nn_params(1:20050),50,401);
+initial_Theta2 = reshape(nn_params(20051:21325),25,51);
+initial_Theta3 = reshape(nn_params(21326:end),10,26);  
 
 % Unroll parameters
 initial_nn_params = [initial_Theta1(:) ; initial_Theta2(:); initial_Theta3(:)];
@@ -149,7 +153,7 @@ initial_nn_params = [initial_Theta1(:) ; initial_Theta2(:); initial_Theta3(:)];
 fprintf('\nChecking Backpropagation... \n');
 
 %  Check gradients by running checkNNGradients
-checkNNGradients;
+%checkNNGradients;
 
 fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
@@ -159,13 +163,13 @@ pause;
 %  Once your backpropagation implementation is correct, you should now
 %  continue to implement the regularization with the cost and gradient.
 %
-
-fprintf('\nChecking Backpropagation (w/ Regularization) ... \n')
-
-%  Check gradients by running checkNNGradients
-lambda = 3;
-checkNNGradients(lambda);
-
+##
+##fprintf('\nChecking Backpropagation (w/ Regularization) ... \n')
+##
+##%  Check gradients by running checkNNGradients
+##lambda = 3;
+##checkNNGradients(lambda);
+##
 % Also output the costFunction debugging values
 debug_J  = nnCostFunction(nn_params, input_layer_size, ...
                           hidden_layer_size, num_labels, X, y, lambda);
@@ -188,7 +192,7 @@ fprintf('\nTraining Neural Network... \n')
 
 %  After you have completed the assignment, change the MaxIter to a larger
 %  value to see how more training helps.
-options = optimset('MaxIter', 50);
+options = optimset('MaxIter', 500);
 
 %  You should also try different values of lambda
 lambda = 1;
@@ -201,14 +205,19 @@ costFunction = @(p) nnCostFunction(p, ...
 
 % Now, costFunction is a function that takes in only one argument (the
 % neural network parameters)
+
 [nn_params, cost] = fmincg(costFunction, initial_nn_params, options);
 
 % Obtain Theta1 and Theta2 back from nn_params
-Theta1 = rand(nn_params(1:hidden_layer_size * (input_layer_size + 1)), ...
-                 hidden_layer_size, (input_layer_size + 1));
+##Theta1 = rand(nn_params(1:hidden_layer_size * (input_layer_size + 1)), ...
+##                 hidden_layer_size, (input_layer_size + 1));
+##
+##Theta2 = rand(nn_params((1 + (hidden_layer_size * (input_layer_size + 1))):end), ...
+##                 num_labels, (hidden_layer_size + 1));
 
-Theta2 = rand(nn_params((1 + (hidden_layer_size * (input_layer_size + 1))):end), ...
-                 num_labels, (hidden_layer_size + 1));
+Theta1 = reshape(nn_params(1:20050),50,401);
+Theta2 = reshape(nn_params(20051:21325),25,51);
+Theta3 = reshape(nn_params(21326:end),10,26);  
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
@@ -232,7 +241,7 @@ pause;
 %  neural network to predict the labels of the training set. This lets
 %  you compute the training set accuracy.
 
-pred = predict(Theta1, Theta2, X);
+pred = predict(Theta1, Theta2, Theta3, X);
 
 fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred == y)) * 100);
 

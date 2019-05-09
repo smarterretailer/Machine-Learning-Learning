@@ -1,0 +1,285 @@
+From:	Lipson, Alan
+Sent:	Thursday, May 02, 2019 9:00 AM
+To:	Feeley, Glen; Harris, Shawn
+Subject:	FW: URGENT - FPL PMK RFID Project
+
+Glen/Shawn,  I had a short dialogue with Chad Tripp last evening.
+
+Alan
+
+ 
+Alan Lipson
+Solution Architect, Retail
+ZEBRA TECHNOLOGIES CORPORATION
+
+2600 Sunnystone Way, Suite 200
+Raleigh, NC  27613
+M: +1 919 395 3434
+alan.lipson@zebra.com
+
+www.zebra.com
+Follow Zebra! 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+From: Tripp, Chad <CTripp@zebra.com>  
+Sent: Wednesday, May 01, 2019 8:56 PM 
+To: Lipson, Alan <alan.lipson@zebra.com> 
+Subject: RE: URGENT - FPL PMK RFID Project
+
+Alan, from reading the entire thread it appears that our reseller partner, POSData, is the one requesting 
+the RFID SME support.    There may be a solution play but to get that readout you would need to request 
+a call with FP&L directly and more fully qualify the opportunity.   If we don’t have direct access to their 
+Innovation team and the larger scope of the project than we shouldn’t proceed from a Solutions 
+perspective.   My two cents.
+
+Chad
+
+
+From: Lipson, Alan <alan.lipson@zebra.com>  
+Sent: Wednesday, May 01, 2019 4:57 PM 
+To: Tripp, Chad <CTripp@zebra.com> 
+Subject: FW: URGENT - FPL PMK RFID Project
+
+
+
+ 
+Alan Lipson
+Solution Architect, Retail
+ZEBRA TECHNOLOGIES CORPORATION
+
+2600 Sunnystone Way, Suite 200
+Raleigh, NC  27613
+M: +1 919 395 3434
+alan.lipson@zebra.com
+
+www.zebra.com
+Follow Zebra! 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+From: Martinez, Arnaldo <arnaldo.martinez@zebra.com>  
+Sent: Wednesday, May 01, 2019 4:30 PM 
+To: Foster, Kent <kent.foster@zebra.com>; Lipson, Alan <alan.lipson@zebra.com>; Feeley, Glen 
+<GFeeley@zebra.com> 
+Cc: Johns, Brian <BJohns@zebra.com>; Flake, Susan <Susan.Flake@zebra.com> 
+Subject: RE: URGENT - FPL PMK RFID Project
+
+I should NOT have mentioned Smartlens… LOL
+I told them about Smartlens, but this is a POC driven by FP&L’s Technology Cost Center. They already 
+have the FR piece in place. All they need is the RFID equipment and some air cover.
+
+Regards,
+
+ 
+Arnie Martinez
+Territory Account Manager – FL, MS, AL
+ZEBRA TECHNOLOGIES CORPORATION
+
+3100 SW 145th Avenue
+Miramar, FL 33027
+T: 1 754-260-2035  M: 1 954 234 1262
+arnaldo.martinez@zebra.com
+www.zebra.com
+ 
+
+Follow Zebra! 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+From: Foster, Kent <kent.foster@zebra.com>  
+Sent: Wednesday, May 1, 2019 4:14 PM 
+To: Martinez, Arnaldo <arnaldo.martinez@zebra.com>; Lipson, Alan <alan.lipson@zebra.com>; Feeley, 
+Glen <GFeeley@zebra.com> 
+Cc: Johns, Brian <BJohns@zebra.com>; Flake, Susan <Susan.Flake@zebra.com> 
+Subject: RE: URGENT - FPL PMK RFID Project
+
+Hi Arnie,
+We want to engage our CEM that supports RFID/Smartlens to help us formulate the requirements and 
+scope and then we can engage Sue to assist us in validating the design and applying any best practices 
+that we may have overlooked.
+
+Alan and Glen – Who should we engage here with Marty moving over to Lowe’s? Is Tim Fox the new 
+dude for these engagements? If so, is he up to speed yet?
+Can you guys help us identify the right people to help us discover and scope as well as set up an initial 
+call with the account team to review?
+
+Thanks.
+
+                            With Regard,
+ 
+Kent Foster                                                                           
+Sales Engineering Manager 
+Retail South & NA Hospitality
+ZEBRA TECHNOLOGIES CORPORATION
+T: +1 561 374-0905
+kent.foster@zebra.com
+www.zebra.com
+
+
+
+
+
+
+
+
+From: Martinez, Arnaldo <arnaldo.martinez@zebra.com>  
+Sent: Wednesday, May 01, 2019 4:05 PM 
+To: Flake, Susan <Susan.Flake@zebra.com> 
+Cc: Johns, Brian <BJohns@zebra.com>; Foster, Kent <kent.foster@zebra.com> 
+Subject: FW: URGENT - FPL PMK RFID Project 
+Importance: High
+
+Hi Susan,
+
+FP&L is in the process of testing our FX RFID readers / antennas in their PMK equipment trailers. Per the 
+email below, they are asking us for guidance on best practices and placements for the RFID readers for 
+optimization in this type of environment. This can be done over the phone. 
+The opportunity consists of 50 trailers that would be equipped with RFID and facial recognition 
+infrastructure to identify both the equipment and the person removing the equipment. FP&L will supply 
+the facial recognition portion. I f all goes as planned, they would extend this to their 20 warehouses. 
+Think of it as a variation of “SmartLens” where we would provide the RFID portion of the solution. The 
+project is driven by FP&L’s IT Innovation Team. 
+They are also looking at Impinj and other manufacturers. 
+At this time, they’re only looking for the RFID equipment to accurately read all the tags in the pilot 
+trailer. Please review the pictures below.
+Who should we engage for support next week? I’m copying Brian who is our SE supporting this 
+opportunity. We need someone to provide on line support between Wednesday and Thursday of next 
+week.
+
+SF Opportunity Number: Z-0000615354
+
+Regards,
+
+ 
+Arnie Martinez
+Territory Account Manager – FL, MS, AL
+ZEBRA TECHNOLOGIES CORPORATION
+
+3100 SW 145th Avenue
+Miramar, FL 33027
+T: 1 754-260-2035  M: 1 954 234 1262
+arnaldo.martinez@zebra.com
+www.zebra.com
+ 
+
+Follow Zebra! 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+From: Silvia Padilla <Silvia.Padilla@posdata.com>  
+Sent: Wednesday, May 1, 2019 11:23 AM 
+To: Martinez, Arnaldo <arnaldo.martinez@zebra.com>; Johns, Brian <BJohns@zebra.com> 
+Cc: Tom Narut <Tom.Narut@posdata.com>; Nusret Conk <nusret.conk@posdata.com> 
+Subject: URGENT - FPL PMK RFID Project 
+Importance: High
+
+[External Email]
+Arnie,
+
+Tom is on the road today and urgently needs your assistance and support on this project.  He needs an 
+RFID SME assigned to this project ASAP and discussions need to be had.  
+
+Tom has been informed that the PMK Trailer is being delivered to Juno Beach tomorrow (Thursday) and 
+they need input from Zebra’s RFID SME for optimization on the FX7500 and AN480-CL66100WR 
+antenna.  
+
+Tom is going to be onsite next week Wednesday or Thursday for a project status check.  He is hoping by 
+then we can have the SME loop in on a phone call and share the best practices and placements for the 
+RFID readers for optimization in this type of environment.
+
+PMK Trailer:                                                                                                                       Connex 
+Trailer:                                                                                                                                                                               
+                  
+                 
+ 
+
+
+
+Inside the Trailer:                                                                            Totes:
+                                
+ 
+ 
+
+Sample Tags we Shipped:
+ 
+
+
+
+Tom will be in meetings today, but you can call his cell phone to discuss and leave message if necessary.
+
+Thank you for your support on this project.
+Sil
+
+Silvia Padilla |  AIDC Customer Service Manager 
+POSDATA Group, Inc. 
+Integrity  |  Expertise  |  Excellence  |  Relationship  
+O  253.853.2331  |  F  253.853.2381  |  
+E silvia.padilla@posdata.com  |   W  www.posdata.com
+1103 W Hibiscus Blvd Ste 302, Melbourne, FL 32091 
+
+ 
+
+This message and any attachments contain information which may be confidential or privileged. If you are not the intended recipient, please 
+refrain from any disclosure, copying, distribution or use of this information. Please be aware that such actions are prohibited. 
+If you have received this transmission in error, kindly notify us by email at sales@posdata.com. We appreciate your cooperation. Please 
+consider the environment before printing this email.
+
+
+
