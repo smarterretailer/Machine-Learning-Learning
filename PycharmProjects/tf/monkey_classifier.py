@@ -1,7 +1,3 @@
-# Transfer Learning Example using 10 Monkey Species Dataset
-# https://www.kaggle.com/slothkong/10-monkey-species
-# Author: Mike Bernico @mikebernico mike.bernico@gmail.com
-
 # these seeds are both required for reproducibility
 import numpy as np
 
@@ -17,6 +13,7 @@ from keras.callbacks import TensorBoard, ModelCheckpoint
 from keras.preprocessing.image import ImageDataGenerator
 from keras.optimizers import SGD
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 from transfer_learning_config import Configuration
 
 

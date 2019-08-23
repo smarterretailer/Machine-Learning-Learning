@@ -15,6 +15,7 @@ from keras.callbacks import TensorBoard, ModelCheckpoint
 from keras.preprocessing.image import ImageDataGenerator
 from keras.optimizers import SGD
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 from transfer_learning_config import Configuration
 
 

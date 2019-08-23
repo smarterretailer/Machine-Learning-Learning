@@ -1,0 +1,8 @@
+class Configuration:
+    def __init__(self):
+        self.feature_extraction_epochs = 1
+        self.fine_tuning_epochs = 20
+        self.epochs_without_transfer_learning = 100
+        self.batch_size = 256
+        self.data_dir = "data/training"
+        self.val_dir = "data/validation"
