@@ -1,8 +1,4 @@
-
-*.zip
-*.jpeg
-*.jpg
-*.hdf5
 *.h5
+*.zip
 *unconfirmed*
-*/data/*
+*.jpg
